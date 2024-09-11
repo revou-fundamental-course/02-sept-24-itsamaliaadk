@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css ">
+    <title>Hitung Luas & Keliling</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -15,93 +15,73 @@
     </header>
 
     <main>
+        <!-- bagian button pilihan menu -->
         <section class="selection-content">
             <button href="#" type="button" class="selection-btn pink-color">Segitiga</button>
             <button href="#" type="button" class="selection-btn purple-color">Jajar Genjang</button>
         </section>
 
         <section class="main-content">
-
+            <!-- Bagian Segitiga -->
             <aside>
                 <header>
-                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                    <h1 class="luas-segitiga-header">Hitung Luas & Keliling Segitiga</h1>
                 </header>
-
                 <article class="luas-segitiga-content">
                     <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga :</p>
+                    <p>Rumus Luas Segitiga: ½ x alas x tinggi</p>
+                    <p>Rumus Keliling Segitiga: alas + tinggi + sisi miring</p>
                 </article>
-
-                <hr>
-
-                <form>
-                    <header>
-                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
-                    </header>
-
+                <form id="segitiga-form">
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas</label>
-                        <input id="panjang-alas-2" type="number">
+                        <label for="alas-segitiga">Alas</label>
+                        <input id="alas-segitiga" type="number" required>
                     </div>
-
                     <div class="input-wrapper">
-                        <label for="tinggi">Tinggi</label>
-                        <input id="tinggi-2">
+                        <label for="tinggi-segitiga">Tinggi</label>
+                        <input id="tinggi-segitiga" type="number" required>
                     </div>
-
-                    <p id="result">Hasil Perhitungan : </p>
-                    <button>Hitung</button>
+                    <div class="input-wrapper">
+                        <label for="sisi-miring">Sisi Miring</label>
+                        <input id="sisi-miring" type="number" required>
+                    </div>
+                    <button type="submit">Hitung</button>
+                    <p id="result-segitiga">Hasil Perhitungan: </p>
                 </form>
-
             </aside>
 
+            <!-- Bagian Jajar Genjang -->
             <aside>
                 <header>
-                    <h1 class="luas-segitiga-header">Luas Segitiga</h1>
+                    <h1 class="luas-jg-header">Hitung Luas & Keliling Jajar Genjang</h1>
                 </header>
 
-                <article class="luas-segitiga-content">
-                    <div class="luas-segitiga-img"></div>
-                    <p>Rumus Luas Segitiga :</p>
+                <article class="luas-jg-content">
+                    <div class="luas-jg-img"></div>
+                    <p>Rumus Luas Jajar Genjang: alas x tinggi</p>
+                    <p>Rumus Keliling Jajar Genjang: 2 x (alas + sisi miring)</p>
                 </article>
-
-                <hr>
-
-                <form>
-                    <header>
-                        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
-                    </header>
-
+                <form id="jajargenjang-form">
                     <div class="input-wrapper">
-                        <label for="panjang-alas">Panjang Alas</label>
-                        <input id="panjang-alas" type="number">
+                        <label for="alas-jajargenjang">Alas</label>
+                        <input id="alas-jajargenjang" type="number" required>
                     </div>
-
                     <div class="input-wrapper">
-                        <label for="tinggi">Tinggi</label>
-                        <input id="tinggi">
+                        <label for="tinggi-jajargenjang">Tinggi</label>
+                        <input id="tinggi-jajargenjang" type="number" required>
                     </div>
-
-                    <p id="result">Hasil Perhitungan : </p>
-                    <button>Hitung</button>
+                    <div class="input-wrapper">
+                        <label for="sisi-miring-jajargenjang">Sisi Miring</label>
+                        <input id="sisi-miring-jajargenjang" type="number" required>
+                    </div>
+                    <button type="submit">Hitung</button>
+                    <p id="result-jajargenjang">Hasil Perhitungan: </p>
                 </form>
-
             </aside>
-
         </section>
-
     </main>
 
     <script src="./js/script.js"></script>
 </body>
 
 </html>
-
-<!-- relative path
-css\styles.css 
-bisa dibuka selain local
--->
-<!-- not relative path
-.\css\styles.css 
-cuma bisa local
--->
