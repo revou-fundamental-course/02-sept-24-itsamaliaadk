@@ -76,3 +76,10 @@
 .main-content>aside {
     flex: 1;
 }
+
+/* kalo layar mendekati 480px, baru berubah jadi 1 sisi */
+@media only screen and (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+    }
+}
